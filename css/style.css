@@ -1,0 +1,243 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/* 16 px sería el adecuado */
+/* En 0 para que me ayude a estar centrado */
+*{
+	margin:0;
+	padding:0;
+}
+
+
+html {
+	font-size:10px;
+}
+
+body {
+	background-color:#6CC;
+	background-image: url(../imagenes/nubes.png), url(../imagenes/palmera.png);
+	background-position:center top, top right;
+	background-repeat:no-repeat, no-repeat;
+	color:#666;
+	/* Open Sans en comillas porque tiene espacios */
+	font-family:'Open Sans', Arial, Helvetica, sans-serif;
+	/* hace referencia al padre, en este caso al HTML, 1.6 rem*/
+	font-size:1.6rem;
+	font-weight:300;
+	height:auto;
+	min-width:960px;
+}
+
+a:active {
+	color:#09C;
+	/* para quitar subrayado de LINKS */
+	text-decoration:none;	
+}
+
+.slider{
+    width: 80%;
+    margin: auto; 
+    /*Para ocultar las otras imágenes*/
+    overflow: hidden; 
+}
+
+.slider ul{
+    display:flex;
+    padding: 0;
+    width: 400%;
+    /*Añadimos la animación de transición*/
+    animation: cambio 20s infinite;
+    /*Para que no se note el cambio entre la ultima y la primera al terminar ciclo*/
+    /*animation-direction: alternate;*/
+
+    animation-timing-function: linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style:none;
+}
+
+.slider img{
+    width:100%;    
+}
+
+@keyframes cambio {
+    /*Los % corresponden al tiempo asignado*/
+    /*Del 0 a 4 seg se pone la primer imagen*/
+    0% { margin-left: 0 }
+    20% { margin-left: 0 }
+    /*Lapsto de tiempo de 1 seg para la transición de img1 a img2*/
+
+    25% { margin-left: -100% }
+    45% { margin-left: -100% }
+
+    50% { margin-left: -200% }
+    70% { margin-left: -200% }
+
+    75% { margin-left: -300% }
+    100% { margin-left: -300% }
+
+}
+
+a:hover {
+	color:#09C;
+	text-decoration:none;
+}
+
+a:link {	
+	color:#F00;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#F00;
+	/* Una vez que fuiste a la pagina y regresaste, para no dejar marca morada en link */
+	text-decoration:none;
+	
+}
+
+h1 {
+	font-family:'Open Sans', Arial, Helvetica, sans-serif;
+	font-size:3rem;
+	font-weight:300;
+	color:#999;		
+	margin-bottom:3rem;	
+	text-align:left;	
+}
+
+
+h2 {
+	font-family:'Open Sans', Arial, Helvetica, sans-serif;
+	font-size:2.5rem;
+	font-weight:300;
+	color:#999;
+	margin:0 0 2rem -3.5%;	 /* el número negativo contra resta el margen izquierdo del contenedor */
+	text-align:center;	
+}
+
+h3 {
+	font-family:'Open Sans', Arial, Helvetica, sans-serif;
+	font-size:2.5rem;
+	font-weight:300;
+	color:#999;
+	margin-bottom:2rem;	 
+	text-align:center;	
+}
+
+img {
+	border:none;
+	width:100%;
+}
+
+p {
+	line-height:125%;
+	text-align:justify;
+	margin:0 0 2rem;
+}
+
+/* Wrapper es el espacio en blanco de la pagina web */
+#wrapper {
+	background-color:#FFF;
+	font-size:1.6rem;
+	height:auto;
+	min-height:600px;
+	width:960px;
+	min-width:960px;
+	margin:0 auto;
+}
+
+header {
+	background:none;
+	height:100px;
+	margin:0 auto;
+	padding:0;
+	width:960px;
+	text-align:center;	
+}
+
+header #logo {
+	width:150px;
+	height:100px;
+	/*Pegar uno al lado del otro */
+	display:inline-block;
+	margin:0 0 0 4rem;
+}
+/* footer */
+
+footer {
+	background:#F00;
+	bottom:0;
+	/* Fixed es fijo */
+	position:fixed;
+	width:100%;
+	height:100px;
+	color:#FFF;
+	/**/
+	padding:.5rem;
+	z-index:300;
+	font-size:1.4rem;
+}
+
+footer address p {
+	color:#FFF;
+	text-align:center;
+	margin-top:2rem;
+}
+
+#noticias {
+	width:93%;
+	height:auto;
+	margin:3.5%;
+}
+
+#noticias ul {
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding:0;
+}
+
+#noticias ul li {
+	list-style:none;
+	display:inline-block;
+	margin-left:4.5%;
+	width:30%;
+	vertical-align:top;
+}
+
+#noticias ul li:first-child {	
+	margin-left:0;
+	
+}
+
+
+#noticias ul li figure{
+	width:98%;
+		
+}
+
+#noticias ul li figure figcaption {
+	width:95%;
+	height:auto;
+	margin:0;
+	padding:1.5rem;
+	text-align:center;
+}
+
+.clear {
+	clear:both;
+}
+
+.espaciovacio {
+	width:300px;
+	height:120px;
+}
+
+/*PARA RESPONSIVE DESIGN */
+@media screen and (max-width: 960px){
+
+}
+
+
+
