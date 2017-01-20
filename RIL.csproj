@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2C90D50-AD1A-42A7-A6E5-774F5A480AB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>RIL</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="about.aspx" />
+    <Content Include="app_offline.htm" />
+    <Content Include="css\bootstrap-datepicker.css" />
+    <Content Include="css\bootstrap-datepicker.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\metisMenu.css" />
+    <Content Include="css\metisMenu.min.css" />
+    <Content Include="css\modern-business.css" />
+    <Content Include="css\navbar.css" />
+    <Content Include="css\sb-admin-2.css" />
+    <Content Include="css\sb-admin-2.min.css" />
+    <Content Include="css\sidebar.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Estudios.aspx" />
+    <Content Include="Home.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="HomeAdministradorGU.aspx" />
+    <Content Include="HomeEmpleado.aspx" />
+    <Content Include="HomeEmpleadoAC.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="HomeEmpleadoAP.aspx" />
+    <Content Include="HomeEmpleadoCC.aspx" />
+    <Content Include="HomeEmpleadoGE.aspx" />
+    <Content Include="HomeEmpleadoGEBuscar.aspx" />
+    <Content Include="HomeEmpleadoGP.aspx" />
+    <Content Include="HomeEmpleadoGPBuscar.aspx" />
+    <Content Include="HomeM.aspx" />
+    <Content Include="HomePaciente.aspx" />
+    <Content Include="HomePacienteAC.aspx" />
+    <Content Include="HomePacienteCP.aspx" />
+    <Content Include="imagen\SALaboratorio.jpg" />
+    <Content Include="images\fontello-3007fd95\css\animation.css" />
+    <Content Include="images\fontello-3007fd95\css\fontello-codes.css" />
+    <Content Include="images\fontello-3007fd95\css\fontello-embedded.css" />
+    <Content Include="images\fontello-3007fd95\css\fontello-ie7-codes.css" />
+    <Content Include="images\fontello-3007fd95\css\fontello-ie7.css" />
+    <Content Include="images\fontello-3007fd95\css\fontello.css" />
+    <Content Include="images\fontello-3007fd95\demo.html" />
+    <Content Include="images\fontello-3007fd95\font\fontello.svg" />
+    <Content Include="images\fontello-3007fd95\LICENSE.txt" />
+    <Content Include="images\fontello-3007fd95\README.txt" />
+    <Content Include="images\icono.jpg" />
+    <Content Include="images\imagen-1.jpg" />
+    <Content Include="images\imagen-10.jpg" />
+    <Content Include="images\imagen-11.jpg" />
+    <Content Include="images\imagen-12.jpg" />
+    <Content Include="images\imagen-13.jpg" />
+    <Content Include="images\imagen-14.jpg" />
+    <Content Include="images\imagen-15.jpg" />
+    <Content Include="images\imagen-16.jpg" />
+    <Content Include="images\imagen-17.jpg" />
+    <Content Include="images\imagen-18.jpg" />
+    <Content Include="images\imagen-19.jpg" />
+    <Content Include="images\imagen-2.jpg" />
+    <Content Include="images\imagen-3.jpg" />
+    <Content Include="images\imagen-4.jpg" />
+    <Content Include="images\imagen-5.jpg" />
+    <Content Include="images\imagen-6.jpg" />
+    <Content Include="images\imagen-7.jpg" />
+    <Content Include="images\imagen-8.jpg" />
+    <Content Include="images\imagen-9.jpg" />
+    <Content Include="images\logoril.jpg" />
+    <Content Include="JS\Aparato.js" />
+    <Content Include="JS\AparatoEstudio.js" />
+    <Content Include="JS\Citas.js" />
+    <Content Include="JS\Estudio.js" />
+    <Content Include="JS\Genericas.js" />
+    <Content Include="JS\Login.js" />
+    <Content Include="JS\Logout.js" />
+    <Content Include="JS\metisMenu.js" />
+    <Content Include="JS\metisMenu.min.js" />
+    <Content Include="JS\Navegacion.js" />
+    <Content Include="JS\Paciente.js" />
+    <Content Include="JS\Registrar.js" />
+    <Content Include="JS\RegistroUsuario.js" />
+    <Content Include="JS\sb-admin-2.js" />
+    <Content Include="JS\sb-admin-2.min.js" />
+    <Content Include="JS\Table.js" />
+    <Content Include="JS\Usuario.js" />
+    <Content Include="RegistroUsuario.aspx" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jssha1.js" />
+    <Content Include="Scripts\notify.js" />
+    <Content Include="Scripts\notify.min.js" />
+    <Content Include="WebService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Aparatos.cs" />
+    <Compile Include="App_Code\AparatosEstudios.cs" />
+    <Compile Include="App_Code\Citas.cs" />
+    <Compile Include="App_Code\DetalleEstudios.cs" />
+    <Compile Include="App_Code\Estudios.cs" />
+    <Compile Include="App_Code\Login.cs" />
+    <Compile Include="App_Code\Logout.cs" />
+    <Compile Include="App_Code\PacienteJAVA.cs" />
+    <Compile Include="App_Code\Pacientes.cs" />
+    <Compile Include="App_Code\Registro.cs" />
+    <Compile Include="App_Code\RilStatic.cs" />
+    <Compile Include="App_Code\SqlConexion.cs" />
+    <Compile Include="App_Code\Usuarios.cs" />
+    <Compile Include="App_Code\Validar.cs" />
+    <Compile Include="App_Code\WebService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Estudios.aspx.cs">
+      <DependentUpon>Estudios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeAdministradorGU.aspx.cs">
+      <DependentUpon>HomeAdministradorGU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleado.aspx.cs">
+      <DependentUpon>HomeEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleadoAC.aspx.cs">
+      <DependentUpon>HomeEmpleadoAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleadoAP.aspx.cs">
+      <DependentUpon>HomeEmpleadoAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleadoCC.aspx.cs">
+      <DependentUpon>HomeEmpleadoCC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleadoGE.aspx.cs">
+      <DependentUpon>HomeEmpleadoGE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleadoGEBuscar.aspx.cs">
+      <DependentUpon>HomeEmpleadoGEBuscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleadoGP.aspx.cs">
+      <DependentUpon>HomeEmpleadoGP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpleadoGPBuscar.aspx.cs">
+      <DependentUpon>HomeEmpleadoGPBuscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeM.aspx.cs">
+      <DependentUpon>HomeM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePaciente.aspx.cs">
+      <DependentUpon>HomePaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePacienteAC.aspx.cs">
+      <DependentUpon>HomePacienteAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePacienteCP.aspx.cs">
+      <DependentUpon>HomePacienteCP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\PublishProfiles\rilizarraga.com - Web Deploy.pubxml" />
+    <None Include="images\fontello-3007fd95\config.json" />
+    <None Include="images\fontello-3007fd95\font\fontello.eot" />
+    <None Include="images\fontello-3007fd95\font\fontello.ttf" />
+    <None Include="images\fontello-3007fd95\font\fontello.woff" />
+    <None Include="images\fontello-3007fd95\font\fontello.woff2" />
+    <None Include="Web.config" />
+    <None Include="Web.Debug.config" />
+    <None Include="website.publishproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
