@@ -56,8 +56,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
-                <img style="max-width: 150px; margin-top: -5px;" src="logoril.jpg">
+            <a class="navbar-brand" rel="home" href="#" >
+                <img style="max-width: 150px; margin-top: -5px;" src="images/logoril.jpg">
             </a>
         </div>
         <!-- Top Menu Items -->
