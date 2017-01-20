@@ -50,23 +50,61 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsenvb">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+            <a class="navbar-brand" rel="home" href="#">
                 <img style="max-width: 150px; margin-top: -5px;" src="images/logoril.jpg">
             </a>
         </div>
         <!-- Top Menu Items -->
+        <div class="collapse navbar-collapse" id="collapsenvb">
+            <ul class="nav navbar-nav navbar-right " style="margin-right: 10px">
+                <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="about.aspx">Quiénes Somos</a>
+                </li>
+                <li>
+                    <a href="Estudios.aspx">Estudios</a>
+                </li>
+            </ul>
+        </div>
         <ul class="nav navbar-right top-nav">
+
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-user-circle" aria-hidden="true">&nbsp;</i> <b class="fa fa-angle-down"></b></a>
-                <ul class="dropdown-menu">
+                <ul id="login-dp" class="dropdown-menu">
                     <li>
-                        <a href="Home.aspx" onclick="Cerrar.cerrarSesion()"><i class="fa fa-fw fa-power-off"></i>Cerrar Sesion</a>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label style="font-size: 15px; margin-left: 40%;">Login</label>
+                                <form class="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                        <label class="sr-only">Usuario</label>
+                                        <input type="text" id="txtUser" class="form-control" placeholder="Nombre de Usuario" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only">Contraseña</label>
+                                        <input type="password" id="txtPwd" class="form-control" placeholder="Contraseña" required>
+                                        <!--       <div class="help-block text-center"><a href="">¿Haz olvidado tu contraseña?</a></div>-->
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="button" id="btnLogin" class="btn btn-primary btn-block" value="Entrar" onclick="Login.Login()" />
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="bottom text-center">
+                                ¿No tienes una cuenta? <a href="RegistroUsuario.aspx">
+                                    <br />
+                                    <b>Registrarse ahora</b></a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </li>
@@ -129,7 +167,7 @@
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color: #0092bc; color: white">
-                        <h4><i class="fa fa-fw fa-check"></i>Resonancia Magnética</h4>
+                        <h4><i class="fa fa-fw fa-compass"></i>Resonancia Magnética</h4>
                     </div>
                     <div class="panel-body">
                         <p>
@@ -142,7 +180,7 @@
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color: #0092bc; color: white">
-                        <h4><i class="fa fa-fw fa-gift"></i>Mastografía Digital</h4>
+                        <h4><i class="fa fa-fw fa-compass"></i>Mastografía Digital</h4>
                     </div>
                     <div class="panel-body">
                         <p>
@@ -227,7 +265,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="form-group">
-                    <a href="Estudios.aspx" class="btn btn-primary form-control"><strong>Conoce todos nuestros estudios</strong></a>
+                    <a href="Estudios.aspx" class="btn btn-primary form-control" style="border-color: black; border-width: 2px;"><strong>Conoce los estudios de radiología e imagen</strong></a>
                 </div>
             </div>
         </div>
