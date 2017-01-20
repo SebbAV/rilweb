@@ -265,7 +265,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="form-group">
-                    <a href="Estudios.aspx" class="btn btn-primary form-control" style="border-color: black; border-width: 2px;"><strong>Conoce todos nuestros estudios</strong></a>
+                    <a href="Estudios.aspx" class="btn btn-primary form-control" style="border-color: black; border-width: 2px;"><strong>Conoce los estudios de radiología e imagen</strong></a>
                 </div>
             </div>
         </div>
