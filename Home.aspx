@@ -21,7 +21,7 @@
     <script src="JS/Login.js"></script>
     <script src="Scripts/notify.js"></script>
     <script src="Scripts/notify.min.js"></script>
-
+        
     <script src="JS/AparatoEstudio.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -155,45 +155,99 @@
                 <h1 class="page-header">Estudios
                 </h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color: #0092bc; color: white">
-                        <h4><i class="fa fa-fw fa-check"></i>Resonancia Magnética</h4>
+                        <h4><i class="fa fa-fw fa-compass"></i>Resonancia Magnética</h4>
                     </div>
                     <div class="panel-body">
                         <p>
-                            Examen imagenológico, utiliza imanes y ondas de radio potentes para crear imágenes del cuerpo,
-                            <strong>No se emplea radiación en el preceso.</strong>
-                            Las imágenes se denominan cortes y se pueden almacenar o imprimir como cualquier otra imágen
+                            El más reciente avance tecnológico de la medicina para el diagnóstico preciso de múltiples enfermedades aún en etapas iniciales. 
                         </p>
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color: #0092bc; color: white">
-                        <h4><i class="fa fa-fw fa-gift"></i>Ultrasonido</h4>
+                        <h4><i class="fa fa-fw fa-compass"></i>Mastografía Digital</h4>
                     </div>
                     <div class="panel-body">
                         <p>
-                            El ultrasonido utiliza ondas sonoras para producir fotografías de las estructuras internas del cuerpo. Se utiliza para ayudar a diagnosticar las causas de dolor, 
-                            hinchazón e infección en los órganos internos del cuerpo.
-                            El ultrasonido es seguro, no es invasivo y no utiliza radiación.
+                            El mejor método para la detección oportuna de cáncer mamario, con un equipo totalmente automatizado que mejora las técnicas de diagnóstico y la experiencia del paciente.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #0092bc; color: white">
+                        <h4><i class="fa fa-fw fa-compass"></i>Tomografía Axial</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Equipo de última generación helicoidal que potencializa la calidad de los estudios y los tiempos de los mismos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color: #0092bc; color: white">
                         <h4><i class="fa fa-fw fa-compass"></i>Densitometría Ósea</h4>
                     </div>
                     <div class="panel-body">
                         <p>
-                            La densitometría ósea es una prueba que permite realizar exploraciones para comprobar 
-                            la densidad mineral del hueso, es decir, su contenido en calcio y la composición corporal total para la detección de osteoporosis.
-                            Es una prueba totalmente indolora y no invasiva.
+                            Imágenes de alta resolución para el diagnóstico y detección oportuna de osteoporosis y osteopenia, en cadera, columna, y cuerpo completo, así como índice de masa corporal. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #0092bc; color: white">
+                        <h4><i class="fa fa-fw fa-compass"></i>Ultrasonido 3D y 4D</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Alta calidad en definición de imagen para un diagnostico optimo y confiable. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #0092bc; color: white">
+                        <h4><i class="fa fa-fw fa-compass"></i>Rayos X Digital</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            El equipo más moderno con accesorios y películas de alta definición para radiología general y estudios contrastados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #0092bc; color: white">
+                        <h4><i class="fa fa-fw fa-compass"></i>Análisis Clínicos</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Contamos con equipos totalmente nuevo y automatizados para brindarle resultaos más rápidos y confiables.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #0092bc; color: white">
+                        <h4><i class="fa fa-fw fa-compass"></i>Cirugía Vascular </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Corrección de problemas de circulación de la sangre en vasos sanguíneos.
                         </p>
                     </div>
                 </div>
