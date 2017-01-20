@@ -200,7 +200,7 @@ var Aparato = {
         var stringJsonAPARATO = JSON.stringify(objJsonAPARATO);
         var objJsonSESION = {
             "Token": token,
-            "IdentificadorCredencial": IdCredencial
+            "IdentificadorCredencial": IdCredencial2
         }
         var stringJsonSESION = JSON.stringify(objJsonSESION);
 
