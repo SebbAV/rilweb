@@ -45,24 +45,23 @@
 <body onload="AparatoEstudio.GenerarXML();">
 
     <div class="wrapper">
-        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="Home.aspx">
-                    <img src="images/logoril.jpg" class="img-responsive" alt="RIL" />
-                </a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsenvb">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
+                <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+                    <img style="max-width: 150px; margin-top: -5px;" src="logoril.jpg">
+                </a>
             </div>
             <!-- Top Menu Items -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right ">
+            <div class="collapse navbar-collapse" id="collapsenvb">
+                <ul class="nav navbar-nav navbar-right " style="margin-right: 10px">
                     <li>
                         <a href="/">Inicio</a>
                     </li>
@@ -72,42 +71,43 @@
                     <li>
                         <a href="Estudios.aspx">Estudios</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-user"></span>
-                            Acceder <b class="caret"></b></a>
-                        <ul id="login-dp" class="dropdown-menu">
-                            <li>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <label style="font-size: 15px; margin-left: 40%;">Login</label>
-                                        <form class="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                            <div class="form-group">
-                                                <label class="sr-only">Usuario</label>
-                                                <input type="text" id="txtUser" class="form-control" placeholder="Nombre de Usuario" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="sr-only">Contraseña</label>
-                                                <input type="password" id="txtPwd" class="form-control" placeholder="Contraseña" required>
-                                                <!--       <div class="help-block text-center"><a href="">¿Haz olvidado tu contraseña?</a></div>-->
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="button" id="btnLogin" class="btn btn-primary btn-block" value="Entrar" onclick="Login.Login()" />
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                    <div class="bottom text-center">
-                                        ¿No tienes una cuenta? <a href="RegistroUsuario.aspx">
-                                            <br />
-                                            <b>Registrarse ahora</b></a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
+            <ul class="nav navbar-right top-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-user-circle" aria-hidden="true">&nbsp;</i> <b class="fa fa-angle-down"></b></a>
+                    <ul id="login-dp" class="dropdown-menu">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label style="font-size: 15px; margin-left: 40%;">Login</label>
+                                    <form class="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                        <div class="form-group">
+                                            <label class="sr-only">Usuario</label>
+                                            <input type="text" id="txtUser" class="form-control" placeholder="Nombre de Usuario" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only">Contraseña</label>
+                                            <input type="password" id="txtPwd" class="form-control" placeholder="Contraseña" required>
+                                            <!--       <div class="help-block text-center"><a href="">¿Haz olvidado tu contraseña?</a></div>-->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="button" id="btnLogin" class="btn btn-primary btn-block" value="Entrar" onclick="Login.Login()" />
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="bottom text-center">
+                                    ¿No tienes una cuenta? <a href="RegistroUsuario.aspx">
+                                        <br />
+                                        <b>Registrarse ahora</b></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
 
     </div>
