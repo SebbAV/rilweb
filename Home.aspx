@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="utf-8" />
@@ -13,7 +14,7 @@
     <title>Radiologia e Imagen Lizarraga</title>
 
     <!-- JavaScripts -->
-    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jssha1.js"></script>
     <script src="Scripts/jquery.cookie.js"></script>
@@ -21,17 +22,17 @@
     <script src="JS/Login.js"></script>
     <script src="Scripts/notify.js"></script>
     <script src="Scripts/notify.min.js"></script>
-        
+
     <script src="JS/AparatoEstudio.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet" />
     <link href="css/navbar.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/full-slider.css" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,71 +46,34 @@
 
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="Home.aspx">
-                <img src="images/logoril.jpg" class="img-responsive" alt="RIL" />
-            </a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
+            <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+                <img style="max-width: 150px; margin-top: -5px;" src="images/logoril.jpg">
+            </a>
         </div>
         <!-- Top Menu Items -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right ">
-                <li>
-                    <a href="/">Inicio</a>
-                </li>
-                <li>
-                    <a href="about.aspx">Quiénes Somos</a>
-                </li>
-                <li>
-                    <a href="Estudios.aspx">Estudios</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-user"></span>
-                        Acceder <b class="caret"></b></a>
-                    <ul id="login-dp" class="dropdown-menu">
-                        <li>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label style="font-size: 15px; margin-left: 40%;">Login</label>
-                                    <form class="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                        <div class="form-group">
-                                            <label class="sr-only">Usuario</label>
-                                            <input type="text" id="txtUser" class="form-control" placeholder="Nombre de Usuario" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only">Contraseña</label>
-                                            <input type="password" id="txtPwd" class="form-control" placeholder="Contraseña" required>
-                                            <!--       <div class="help-block text-center"><a href="">¿Haz olvidado tu contraseña?</a></div>-->
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="button" id="btnLogin" class="btn btn-primary btn-block" value="Entrar" onclick="Login.Login()" />
-                                        </div>
-
-                                    </form>
-                                </div>
-                                <div class="bottom text-center">
-                                    ¿No tienes una cuenta? <a href="RegistroUsuario.aspx">
-                                        <br />
-                                        <b>Registrarse ahora</b></a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <ul class="nav navbar-right top-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-user-circle" aria-hidden="true">&nbsp;</i> <b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="Home.aspx" onclick="Cerrar.cerrarSesion()"><i class="fa fa-fw fa-power-off"></i>Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
+    <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -117,22 +81,28 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <!-- Wrapper for slides -->
+
+        <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image: url('/images/imagen-1.jpg');"></div>
-                <!-- <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>-->
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image: url('/images/imagen-17.jpg');"></div>
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image: url('http://placehold.it/1900x1080&text=Slide One');"></div>
                 <div class="carousel-caption">
+                    <h2>Caption 1</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image: url('/images/imagen-13.jpg');"></div>
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image: url('http://placehold.it/1900x1080&text=Slide Two');"></div>
                 <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image: url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
                 </div>
             </div>
         </div>
@@ -144,6 +114,7 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
+
     </header>
 
     <!-- Page Content -->
@@ -158,11 +129,11 @@
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color: #0092bc; color: white">
-                        <h4><i class="fa fa-fw fa-compass"></i>Resonancia Magnética</h4>
+                        <h4><i class="fa fa-fw fa-check"></i>Resonancia Magnética</h4>
                     </div>
                     <div class="panel-body">
                         <p>
-                            El más reciente avance tecnológico de la medicina para el diagnóstico preciso de múltiples enfermedades aún en etapas iniciales. 
+                            El más reciente avance tecnológico de la medicina para el diagnóstico preciso de múltiples enfermedades aún en etapas iniciales.
                         </p>
 
                     </div>
@@ -171,11 +142,12 @@
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color: #0092bc; color: white">
-                        <h4><i class="fa fa-fw fa-compass"></i>Mastografía Digital</h4>
+                        <h4><i class="fa fa-fw fa-gift"></i>Mastografía Digital</h4>
                     </div>
                     <div class="panel-body">
                         <p>
-                            El mejor método para la detección oportuna de cáncer mamario, con un equipo totalmente automatizado que mejora las técnicas de diagnóstico y la experiencia del paciente.
+                            El mejor método para la detección oportuna de cáncer mamario, con un equipo totalmente automatizado que mejora las técnicas
+        de diagnóstico y la experiencia del paciente.
                         </p>
                     </div>
                 </div>
@@ -199,7 +171,8 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                            Imágenes de alta resolución para el diagnóstico y detección oportuna de osteoporosis y osteopenia, en cadera, columna, y cuerpo completo, así como índice de masa corporal. 
+                            Imágenes de alta resolución para el diagnóstico y detección oportuna de osteoporosis y osteopenia, en cadera, columna, y
+        cuerpo completo, así como índice de masa corporal.
                         </p>
                     </div>
                 </div>
@@ -211,7 +184,7 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                            Alta calidad en definición de imagen para un diagnostico optimo y confiable. 
+                            Alta calidad en definición de imagen para un diagnostico optimo y confiable.
                         </p>
                     </div>
                 </div>
@@ -235,7 +208,7 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                            Contamos con equipos totalmente nuevo y automatizados para brindarle resultaos más rápidos y confiables.
+                            Contamos con equipos totalmente nuevo y automatizados para brindarle resultados más rápidos y confiables.
                         </p>
                     </div>
                 </div>
@@ -268,11 +241,9 @@
                         <div class="panel-body">
                             <div class="form-group">
                             </div>
-                            <div class="form-group">
-                                <div class="col-sm-2">
-                                    <span class="glyphicon glyphicon-home"></span>
-                                </div>
-                                <div class="col-md-10">
+                            <div class="form-group" style="text-align: left">
+
+                                <div class="col-md-12">
 
                                     <h3>Direccion Radiología e Imagen:</h3>
 
@@ -283,32 +254,26 @@
                                     </label>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-2">
-                                        <span class="glyphicon glyphicon-phone-alt"></span>
-                                    </div>
-                                    <div class="col-md-10">
+
+                                    <div class="col-md-12">
                                         <label>Telefono</label>
                                         <label>Tel. (228) 819 99 05</label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-3">
-                                        <span class="glyphicon glyphicon-home"></span>
-                                    </div>
-                                    <div class="col-md-9">
+
+                                    <div class="col-md-12">
                                         <h3>Análisis Clinicos:</h3>
                                         <label>
-                                            Priv. de Jóse Antonio  Cempola #50
+                                            Cempola #50
                                         </label>
                                         <label>
                                             Xalapa,Veracruz
                                         </label>
                                     </div>
                                     <br />
-                                    <div class="col-sm-2">
-                                        <span class="glyphicon glyphicon-phone-alt"></span>
-                                    </div>
-                                    <div class="col-md-10">
+
+                                    <div class="col-md-12">
                                         <label>Telefono</label>
                                         <label>
                                             Tel. (228) 812 20 60,
@@ -321,7 +286,8 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d722.7767000174606!2d-96.91095596377572!3d19.523638773308736!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db3204c9f3c16b%3A0x6a66fd1e576b433b!2sRadiologia+e+Imagen+Lizarraga!5e1!3m2!1sen!2smx!4v1479082020979" onload="this.width=screen.width;this.height=screen.height;" style="border: 0; width: 100%; height: 400px"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d722.7767000174606!2d-96.91095596377572!3d19.523638773308736!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db3204c9f3c16b%3A0x6a66fd1e576b433b!2sRadiologia+e+Imagen+Lizarraga!5e1!3m2!1sen!2smx!4v1479082020979"
+                        onload="this.width=screen.width;this.height=screen.height;" style="border: 0; width: 100%; height: 400px"></iframe>
                 </div>
             </div>
             <!-- /.row -->
