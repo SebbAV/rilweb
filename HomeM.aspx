@@ -19,7 +19,7 @@
     <div class="page-wrapper">
         <div class="panel panel-default">
             <div class="form-group">
-                <h1>Pagina en mantenimiento...!</h1>
+                <h1>Pagina en mantenimiento...</h1>
                 <img class="img-responsive" src="imagen/SALaboratorio.jpg" />
 
             </div>
