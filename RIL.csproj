@@ -47,6 +47,7 @@
     <Content Include="css\bootstrap-datepicker.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\full-slider.css" />
     <Content Include="css\login.css" />
     <Content Include="css\metisMenu.css" />
     <Content Include="css\metisMenu.min.css" />
