@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="Home.aspx">
-                    <img src="images/logoril.jpg" class="img-responsive" alt="RIL" />
+                    <img style="max-width: 150px; margin-top: -5px;" src="images/logoril.jpg" alt="RIL"/>
                 </a>
             </div>
             <!-- Top Menu Items -->
