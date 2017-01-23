@@ -158,7 +158,7 @@
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Estudios
+                <h1 class="page-header">Servicios 
                 </h1>
             </div>
             <div class="col-md-3">
@@ -219,7 +219,7 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                            Alta calidad en definición de imagen para un diagnostico optimo y confiable.
+                            Alta calidad en definición de imagen para un diagnóstico óptimo y confiable.
                         </p>
                     </div>
                 </div>
@@ -260,10 +260,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12">
+            <div class="col-lg-4">
                 <div class="form-group">
                     <a href="Estudios.aspx" class="btn btn-primary form-control" style="border-color: black; border-width: 2px;"><strong>Conoce los estudios de radiología e imagen</strong></a>
                 </div>
+            </div>
+             <div class="col-lg-8">
+
             </div>
         </div>
         <!-- /.row -->
@@ -280,11 +283,11 @@
 
                                 <div class="col-md-12">
 
-                                    <h3>Direccion Radiología e Imagen:</h3>
+                                    <h3>Radiología e Imagen:</h3>
 
                                     <label>
                                         Priv. de Jóse Antonio #6
-                                Segundo piso Frac Los Ángeles
+                                Segundo piso Fracc. Los Ángeles
                                      Xalapa,Veracruz
                                     </label>
                                 </div>
@@ -292,16 +295,20 @@
 
                                     <div class="col-md-12">
                                         <label>Telefono</label>
-                                        <label>Tel. (228) 819 99 05</label>
+                                        <label>(228) 819 99 05,
+                                            (228) 818 99 93,
+                                            (228) 818 99 96
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="form-group">
 
                                     <div class="col-md-12">
-                                        <h3>Análisis Clinicos:</h3>
+                                        <h3>Análisis Clínicos:</h3>
                                         <label>
-                                            Cempola #50
+                                              Cempola #50   Fracc. Los Ángeles              
                                         </label>
+                                        <br/>
                                         <label>
                                             Xalapa,Veracruz
                                         </label>
@@ -311,7 +318,7 @@
                                     <div class="col-md-12">
                                         <label>Telefono</label>
                                         <label>
-                                            Tel. (228) 812 20 60,
+                                (228) 812 20 60,
                                 (228) 812 20 61
                                         </label>
                                     </div>
